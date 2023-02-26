@@ -1,0 +1,31 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package eva1_16_gcd;
+
+/**
+ *
+ * @author invitado
+ */
+public class EVA1_16_GCD {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        System.out.println("MCD 180,48 = " + gcd (48,180));
+    }
+    public static int gcd (int num, int div){
+        if(div==0)
+            return num;
+        else{
+            int resi= num % div; 
+            return gcd (div,resi);
+        }
+    }
+    
+}

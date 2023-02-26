@@ -1,0 +1,46 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package eva1_14_recursividad;
+
+/**
+ *
+ * @author invitado
+ */
+public class EVA1_14_RECURSIVIDAD {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+      /* for (int i = 10 ; i >= 1; i--){
+           System.out.println(i + " - ");
+       } */
+        falsoFor(1);
+        System.out.println("");
+        falsoForUp(1,10);
+    }
+    
+    public void recursivo(){
+        System.out.println("Hola stackoverflow!!!");
+        recursivo(); // Recursividad; el metodo se llama a si mismo. 
+        
+    }
+    public static void falsoFor(int valor){
+        System.out.print(valor + " - ");
+        if(valor < 10)
+        falsoFor(valor + 1);
+        
+    }
+    
+    public static void falsoForUp(int ini, int valor){
+        System.out.print(ini + " - " );
+        if(ini < valor)
+            falsoForUp(ini+1,valor);
+       
+    }
+}

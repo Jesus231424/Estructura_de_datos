@@ -1,0 +1,44 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package eva1_13_captar_califas;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author invitado
+ */
+public class EVA1_13_CAPTAR_CALIFAS {
+   
+    
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+ int arre[][][];
+ arre = new int [5][][];
+ arre[0] = new int [5][];
+ arre[0][0]= new int [5]; 
+        int arreGpos[][]; 
+Scanner input = new Scanner(System.in);
+        System.out.println("INTRODUCE LA CANTIDAD DE GRUPOS");
+        int grupos = input.nextInt();
+arreGpos = new int[grupos][];
+for (int i = 0; i< arreGpos.length ;i++){
+        System.out.println("Grupo " + i);
+        System.out.println("¿Cuantos estudiantes tiene?");
+int estu = input.nextInt();
+arreGpos[i] = new int [estu];
+int califa = input.nextInt(); 
+for (int j = 0; j < arreGpos[i].length  ; j++){
+    System.out.println("Estudiantes " + j); 
+}
+    
+}
+
+}

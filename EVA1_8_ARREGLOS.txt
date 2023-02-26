@@ -1,0 +1,47 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package eva1_8_arreglos;
+
+/**
+ *
+ * @author invitado
+ */
+public class EVA1_8_ARREGLOS {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        int[] arregloDatos = new int [50]; 
+        int arregloDatos2[] = new int [50]; 
+        // tipoDato [] todas los indentificadores son arreglos. 
+        int[] a,b,c,d; 
+        // tipoDato indentificador[], solo el indentificador es arreglo//
+        int w,x[],y,z;
+        //solo la X es arreglo.
+        //---------------------------------- Arreglos: variable que almacena multiples datos, del 
+        // mismo tipo, de manera consecutiva. Se accede al dato atravez de un indice. 
+        //Java --> inician en 0 
+        // terminan en N - 1 
+        System.out.println(arregloDatos);
+        String[]arregloCade= new String [50]; 
+                System.out.println(arregloCade);
+        for (int i = 0; i < areglosDatos.lenght ; i++) {	
+            arregloDatos[i] =(int)(Math.random() * 100); 
+        }
+          for (int i = 0; i < areglosDatos.lenght ; i++) {
+              System.out.println("{ " + arregloDatos[i]+ "]");
+        }
+         arregloDatos[50] = 100 ; 
+    }
+    
+}
+
+
+
+//lenght --> cantidad de elementos del arreglo. 
